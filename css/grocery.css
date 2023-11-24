@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* font-size: 62.5%; */
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+/* Heading */
+.heading {
+    text-align: center;
+    font-size: 50px;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background-color: rgba(255, 51, 153, .05);
+}
+
+.search-btn {
+    width: 92%;
+    margin-left: 0.5%;
+}
+
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-shadow: #333;
+}
+
+.box-container {
+    /* display: inline-block; */
+    /* flex: 1 1 30rem; */
+    display: flex;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    /* border: 0.1rem solid rgba(0, 0, 0, .1); */
+    position: relative;
+    flex-basis: 30%;
+    border: 2px solid #ccc;
+    margin: 12px 12px;
+    
+}
+
+.box-container .item-1 {
+    width: 170px;
+    height: 170px;
+}
+
+.box-item .tesx-desc {
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    padding: 0.7rem 1rem;
+    font-size: 12px;
+    color: red;
+    background-color: rgba(226, 17, 17, 0.135);
+    z-index: 1;
+    border-radius: 0.5rem;
+    font-weight: 900;
+}
+
+.box-content {
+    margin-top: 10%;
+}
+
+.box-content .box-heading {
+    opacity: 0.5;
+}
+
+.box-content .discount {
+    margin-top: 15px;
+    font-size: 10px;
+    text-decoration: line-through;
+}
+
+.box-content .price{
+font-size: 15px;
+color: red;
+}
+
+.box-content .add{
+    margin-top: 10px;
+    font-size: 15px;
+background-color: #000;
+color: #fff;
+text-decoration: none;
+border-radius: 1rem;
+display: inline-block;
+width: 100px;
+height: 19px;
+text-align: center;
+}
+
+.box-content .add:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+
+
+
