@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Lê Trí Đức</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Free HTML Templates" name="keywords" />
+    <meta content="Free HTML Templates" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handlee&family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Flaticon Font -->
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  text-align: center;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: center;
+  border: 1px solid #00bfff;
+  outline: 1px solid #000000;;
+  cursor: pointer;
+  padding: 10px 12px;
+  transition: 0.3s;
+  font-size: 17px;
+  border-radius:50px;
+
+  
+}
+.tabcontent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* Change background color of buttons on hover */
+.tab button.hover {
+  background-color: #00bfff;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #00bfff;
+}
+
+
+/* Style the tab content */
+.tabcontent {
+  text-align: center;
+  display: none;
+  padding: 6px 12px;
+}
+
+</style>
+<style>
+/* Component Needs */
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,400,700);
+.pc-tab > input,
+.pc-tab section > div {
+  display: none;
+}
+
+#tab1:checked ~ section .tab1,
+#tab2:checked ~ section .tab2,
+#tab3:checked ~ section .tab3 {
+  display: block;
+}
+
+#tab1:checked ~ nav .tab1,
+#tab2:checked ~ nav .tab2,
+#tab3:checked ~ nav .tab3 {
+  color: red;
+}
+
+/* Visual Styles */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
+.pc-tab {
+
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.pc-tab ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.pc-tab ul li label {
+  font-family: "Raleway";
+  float: left;
+  padding: 15px 25px;
+  border: 1px solid #00bfff;
+}
+.pc-tab ul li label:hover {
+  background: #00bfff;
+}
+.pc-tab ul li label:active {
+  background: #00bfff;
+}
+.pc-tab ul li:not(:last-child) label {
+  border-right-width: 0;
+}
+.pc-tab section {
+  font-family: "Droid Serif";
+  clear: both;
+}
+.pc-tab section div h2 {
+  margin: 0;
+  font-family: "Raleway";
+  letter-spacing: 1px;
+  color: #34495e;
+}
+
+#tab1:checked ~ nav .tab1 label,
+#tab2:checked ~ nav .tab2 label,
+#tab3:checked ~ nav .tab3 label
+#tab4:checked ~ nav .tab4 label {
+  background: #00bfff;
+  color: #111;
+  position: relative;
+}
+#tab1:checked ~ nav .tab1 label:after,
+#tab2:checked ~ nav .tab2 label:after,
+#tab3:checked ~ nav .tab3 label:after,
+#tab4:checked ~ nav .tab4 label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  bottom: -1px;
+
+}
+
+</style>
+
+<style>
+
+</style>
+
+  </head>
+
+  <body>
+
+    <!-- Navbar Start -->
+    <div id="header">
+        <!-- begin: nav -->
+        <ul id="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="lab4.html">My Lab</a></li>
+          <li><a href="#">Quality</a></li>
+          <!-- <li><a href="#">More</a></li>
+                  <li><a href="#">More</a></li>
+                  <li><a href="#">More</a></li> -->
+        </ul>
+        <!-- end: nav -->
+      </div>
+    <!-- Navbar End -->
+
+
+    <!-- Gallery Start -->
+    <div class="container-fluid pt-5">
+        <div class="container">
+          <div class="text-center pb-2">
+            <p class="section-title px-5">
+              <span class="px-2">Labs</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 text-center mb-2">
+        <ul class="list-inline mb-4" id="portfolio-flters">
+          <a href="lab4.html">
+            <li class="btn btn-outline-primary m-1 ">
+              Lab 4
+            </li>
+          </a>
+          <a href="lab5.html">
+            <li class="btn btn-outline-primary m-1 ">
+              Lab 5
+            </li>
+          </a>
+          <a href="lab6.html">
+            <li class="btn btn-outline-primary m-1 active">
+              Lab 6
+            </li>
+          </a>
+          <a href="lab7.html">
+            <li class="btn btn-outline-primary m-1 ">
+              Lab 7
+            </li>
+          </a>
+          <a href="#">
+            <li class="btn btn-outline-primary m-1 ">
+              Lab 8
+            </li>
+          </a>
+        </ul>
+      </div>
+<!-- Tab links -->
+<div class="tab">
+  <button  class="tablinks" onclick="openCity(event, 'Lab1')" id="defaultOpen">Requirement</button>
+  <button class="tablinks" onclick="openCity(event, 'Lab2')">F-Paterns</button>
+  <button class="tablinks" onclick="openCity(event, 'Lab3')">Z-Paterns</button>
+</div>
+
+<!-- Tab content -->
+<div id="Lab1" class="tabcontent">
+   <div class="container-fluid pt-5">
+      <div class="container pb-3">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 pb-1">
+            <div
+              class="d-flex bg-light shadow-sm border-top rounded mb-4"
+              style="padding: 30px; height: 300px;"
+            >
+              <i
+                class="flaticon-050-fence h1 font-weight-normal text-primary mb-3"
+              ></i>
+              <div class="pl-4">
+                <h4>Yêu cầu</h4>
+                <p class="m-0">
+                  <b>Yêu cầu:</b> Trong menu Labs, tạo 1 menu Lab6 (file lab6.html) sau đó tạo 2 tab Ex1, Ex2
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 pb-1">
+            <div
+              class="d-flex bg-light shadow-sm border-top rounded mb-4"
+              style="padding: 30px; height: 300px"
+            >
+              <i
+                class="flaticon-022-drum h1 font-weight-normal text-primary mb-3"
+              ></i>
+              <div class="pl-4">
+                <h4>Ví dụ</h4>
+                <p class="m-0">
+                  <strong>Ex1:</strong> Thiết kế một trang Web đơn giản sử dụng mẫu <strong> F-pattern</strong> ==> chuyển sang html (ex1.html)
+                  <br>
+<strong>Ex2:</strong> Thiết kế một trang Web sử dụng mẫu <strong> Z-pattern</strong> ==> chuyển sang html (ex2.html)
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 pb-1">
+            <div
+              class="d-flex bg-light shadow-sm border-top rounded mb-4"
+              style="padding: 30px; height: 300px"
+            >
+              <i
+                class="flaticon-030-crayons h1 font-weight-normal text-primary mb-3"
+              ></i>
+              <div class="pl-4">
+                <h4>Chú ý</h4>
+                <p class="m-0">
+                  Với cả <strong>Ex1, Ex2:</strong> Tạo 2 tab <strong>Design</strong> và <strong>Implementation:</strong>
+                  <br>
+<strong>- Design:</strong> chụp lại hình ảnh để có cái nhìn tổng quan về file thiết kế, có nút Download để download file thiết kế về nếu muốn
+<br>
+<strong>- Implementation:</strong> nội dung phần hiện thực trên html
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="Lab2" class="tabcontent"> 
+<div class="pc-tab">
+<input checked="checked" id="tab1" type="radio" name="pct" />
+<input id="tab2" type="radio" name="pct" />
+<input id="tab3" type="radio" name="pct" />
+  <nav>
+    <ul>
+      <li class="tab1">
+        <label style="margin-left: 480px; border-radius:50px;" for="tab1">Design</label>
+      </li>
+      <li class="tab2">
+        <label for="tab2" style="  border-radius:50px;">Implement</label>
+      </li>
+    </ul>
+  </nav>
+  <section>
+    <div class="tab1">
+      <div class="container-fluid pt-5">
+      <div class="container pb-3">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 pb-1">
+            <div class="d-flex bg-light shadow-sm border-top rounded mb-4"
+              style="width: 500px; height: 600px; margin-left: 50px;">
+              <div class="pl-4">
+                <h4>Design on Paper</h4>
+                <p class="m-0">
+                  <img src="img/lab6_1.jpg" alt="" style="width:450px;height: 500px;">
+                  <a href="img/lab6_1.jpg" download="" class="btn btn-secondary mt-1 py-3 px-5" style= "margin-bottom: 10px;">download</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 pb-1">
+            <div
+              class="d-flex bg-light shadow-sm border-top rounded mb-4"
+              style="width: 500px; height: 600px; margin-left: 200px;"
+            >
+              <div class="pl-4">
+                <h4>Design on Figma</h4>
+                <p class="m-0">
+                  <img src="img/lab6_1_fig.jpg" alt="" style="width:450px;height:500px;">
+              <a href="img/lab6_1_fig.jpg" download="" class="btn btn-secondary mt-1 py-3 px-5" style=" margin-bottom: 10px;">download</a>
+              <a href="https://www.figma.com/file/456mWEWq4bqj2P8CEPeTt3/22130049-L%C3%AA-Tr%C3%AD-%C4%90%E1%BB%A9c?type=design&node-id=26-4&mode=design&t=YEO6fuXRXpXoRL3x-0" class="btn btn-secondary mt-1 py-3 px-5" style="margin-bottom: 10px;">Figma</a>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+    </div>
+
+
+
+    <div class="tab2">
+      <iframe src="lab6/blog.html" name="iframe_a" title="Iframe Example" style=" height: 700px;width: 80%;"></iframe>
+    </div>
+    <div class="tab3">
+      <iframe src="lab6/blog.html" name="iframe_a" title="Iframe Example" style="margin-left: 150px; height: 450px;width: 80%;"></iframe>
+    </div>
+  </section>
+</div>
+</div>
+
+
+<div id="Lab3" class="tabcontent">
+<div class="tab">
+  <button class="tablinks" onclick="openDesign(event, 'design1')" id="defaultOpen1">Design</button>
+  <button class="tablinks" onclick="openDesign(event, 'implement1')">Implement</button>
+</div>
+<!-- Tab content -->
+<div id="design1" class="tabcontent1">
+      <div class="container-fluid pt-5">
+      <div class="container pb-3">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 pb-1">
+            <div class="d-flex bg-light shadow-sm border-top rounded mb-4"
+              style="width: 500px; height: 600px; margin-left: 50px;">
+              <div class="pl-4">
+                <h4>Design on Paper</h4>
+                <p class="m-0">
+                  <img src="img/lab6_2.jpg" alt="" style="width:450px;height: 500px;">
+                  <a href="img/lab6_2.jpg" download="" class="btn btn-secondary mt-1 py-3 px-5" style= "margin-bottom: 10px;" target="_blank">download</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 pb-1">
+            <div
+              class="d-flex bg-light shadow-sm border-top rounded mb-4"
+              style="width: 500px; height: 600px; margin-left: 200px;"
+            >
+              <div class="pl-4">
+                <h4>Design on Figma</h4>
+                <p class="m-0">
+                  <img src="img/lab6_2_fig.jpg" alt="" style="width:450px;height:500px;">
+              <a href="img/lab6_2_fig.jpg" download="" class="btn btn-secondary mt-1 py-3 px-5" style=" margin-bottom: 10px;">download</a>
+              <a href="https://www.figma.com/file/456mWEWq4bqj2P8CEPeTt3/22130049-L%C3%AA-Tr%C3%AD-%C4%90%E1%BB%A9c?type=design&node-id=43-2&mode=design&t=YEO6fuXRXpXoRL3x-0" class="btn btn-secondary mt-1 py-3 px-5" style="margin-bottom: 10px;">Figma</a>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div id="implement1" class="tabcontent1">
+ <iframe src="lab6/index.html" name="iframe_a" title="Iframe Example" style="height: 650px;width: 80%; margin-top: 10px;"></iframe>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+</div>
+
+
+
+    <!-- Gallery End -->
+
+    <!-- Footer Start -->
+    
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary p-3 back-to-top"
+      ><i class="fa fa-angle-double-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+<script>
+//https://www.101computing.net/creating-tabs-in-html-css-js/
+
+function selectTab(tabIndex) {
+  //Hide All Tabs
+  document.getElementById('tab1Content').style.display="none";
+  document.getElementById('tab2Content').style.display="none";
+  document.getElementById('tab3Content').style.display="none";
+  document.getElementById('tab4Content').style.display="none";
+  document.getElementById('tab5Content').style.display="none";
+  document.getElementById('tab6Content').style.display="none";
+  document.getElementById('tab7Content').style.display="none";
+  
+  //Show the Selected Tab
+  document.getElementById('tab' + tabIndex + 'Content').style.display="block";  
+}
+</script>
+
+<script >
+  var tabs = document.querySelectorAll(".tabs_wrap ul li");
+  var males = document.querySelectorAll(".male");
+var females = document.querySelectorAll(".female");
+var all = document.querySelectorAll(".item_wrap");
+
+tabs.forEach((tab)=>{
+  tab.addEventListener("click", ()=>{
+    tabs.forEach((tab)=>{
+      tab.classList.remove("active");
+    })
+    tab.classList.add("active");
+    var tabval = tab.getAttribute("data-tabs");
+
+    all.forEach((item)=>{
+      item.style.display = "none";
+    })
+
+    if(tabval == "male"){
+      males.forEach((male)=>{
+        male.style.display = "block";
+      })
+    }
+    else if(tabval == "female"){
+      females.forEach((female)=>{
+        female.style.display = "block";
+      })
+    }
+    else{
+      all.forEach((item)=>{
+        item.style.display = "block";
+      })
+    }
+
+  })
+})
+</script>
+    <script>
+function openDesign(evt, cityName) {
+  var a, tabcontent1, tablinks1;
+  tabcontent1 = document.getElementsByClassName("tabcontent1");
+  for (a = 0; a < tabcontent1.length; a++) {
+    tabcontent1[a].style.display = "none";
+  }
+  tablinks1 = document.getElementsByClassName("tablinks1");
+  for (a = 0; a < tablinks1.length; a++) {
+    tablinks1[a].className = tablinks1[a].className.replace("active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += "active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen1").click();
+</script>
+
+  </body>
+</html>
